@@ -10,5 +10,5 @@ export const NFTMarketplaceAddress = blockchain_address
 export const NFTMarketplaceABI = nftMarketplace.abi;
 
 //TRANSFER FUNDS
-export const transferFundsAddress = NEXT_PUBLIC_TRANSFER_FUNDS_ADDRESS 
+export const transferFundsAddress = transfer_Funds_Address 
 export const transferFundsABI = transferFunds.abi;
