@@ -33,9 +33,9 @@ const NFTCard = ({ NFTData }) => {
 
   // console.log(NFTData);
   return (
-    <div className={Style.NFTCard}>
+    <div className={Style.NFTCard} key={NFTData.key}>
       {NFTData.map((el, i) => (
-        <Link href={{ pathname: "/NFT-details", query: el }}>
+        <Link href={{ pathname: "/NFT-details", query: el }} key={i}>
           <div className={Style.NFTCard_box} key={i + 1}>
             <div className={Style.NFTCard_box_img}>
               <Image
@@ -60,7 +60,7 @@ const NFTCard = ({ NFTData }) => {
                       className={Style.NFTCard_box_update_left_like_icon}
                     />
                   )}
-                  {""} 22
+                  {""} 101
                 </div>
               </div>
 
